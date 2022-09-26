@@ -67,8 +67,8 @@ class CustomTable implements ChangeListener, PropertyChangeListener {
 
 //  ChangeListener implementado
     public void stateChanged(ChangeEvent e) {
-        //  Sync the scroll pane scrollbar with the row header
-
+        
+        //  Sincronizamos el panel scroll con la cabezera de las fials
         JViewport viewport = (JViewport) e.getSource();
         scrollPane.getVerticalScrollBar().setValue(viewport.getViewPosition().y);
     }
